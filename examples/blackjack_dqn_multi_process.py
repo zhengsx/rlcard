@@ -163,11 +163,11 @@ if __name__ == '__main__':
 			logger.add_point(x=env.timestep, y=float(reward)/evaluate_num)
 
 			# Make plot
-			if (episode*evaluate_every) % save_plot_every == 0 and episode > 0:
-				logger.make_plot(save_path=figure_path+str(episode)+'.png')
+		# 	if (episode*evaluate_every) % save_plot_every == 0 and episode > 0:
+		# 		logger.make_plot(save_path=figure_path+str(episode)+'.png')
 
-		# Make the final plot
-		logger.make_plot(save_path=figure_path+'final_'+str(episode)+'.png')
+		# # Make the final plot
+		# logger.make_plot(save_path=figure_path+'final_'+str(episode)+'.png')
 
 		# Close multi-processes
 		for _ in range(PROCESS_NUM):
